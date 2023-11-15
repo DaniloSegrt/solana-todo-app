@@ -1,0 +1,17 @@
+[features]
+seeds = false
+[programs.localnet]
+todo = "HMXqAt7FFKD6SQt8hC9i95upYRNcQXQ5BZ6A4aR1QuoQ"
+
+[programs.devnet]
+todo = "H8zkaz3uTKK4zqtDuNuaTa5CM6arByF9aDLSTkXRCGbQ"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "devnet"
+wallet = "./id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
